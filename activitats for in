@@ -1,0 +1,314 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMjQ4MCpyJDRxVgupjmUmPx",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Antony12-PNG/ant60/blob/main/activitats%20for%20in\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Una estructura if que té dues opcions d repsosta,  x=45 Fes una estructura tenin en compte que el vaors estan compresos entre 0-40 de 40-80 de 80-120 i de 120.\n"
+      ],
+      "metadata": {
+        "id": "lOA2-JQjJ6CZ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zVpp5MBZJ4_f",
+        "outputId": "c626064a-5291-40f2-9934-357d85108148"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "El teu numéro es troba entre e 0 a 40\n"
+          ]
+        }
+      ],
+      "source": [
+        "x=34\n",
+        "if  x <=  40:\n",
+        "  print(\"El teu numéro es troba entre e 0 a 40\")\n",
+        "elif x <= 80:\n",
+        "  print(\"El teu numéro es troba entre 40 i 80\")\n",
+        "elif x <=  120:\n",
+        "  print(\"el teu numero es troba entre el 80 i 120\")\n",
+        "else:\n",
+        "  print(\" El teu numero es superior a 120\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "El mateix pero amb una llista numérica(13,27,34,87,123,46,61,88,32. He de fer un bucle for"
+      ],
+      "metadata": {
+        "id": "nzE2fMNNK01b"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lista= [13, 27, 34, 87, 123, 46, 61, 88, 32 ]\n",
+        "for numeros in lista:\n",
+        "  if numeros <= 20:\n",
+        "    print(\"El numero \" +str(numeros) + \" és troba entre el 0 i 20\" )\n",
+        "  elif numeros <=40:\n",
+        "     print(\"El numero \" +str(numeros) + \" és troba entre el 20 i 40\")\n",
+        "  elif numeros <=60:\n",
+        "     print(\"El numero \" +str(numeros) + \" és troba entre el 40 i 60\")\n",
+        "  elif numeros <=80:\n",
+        "     print(\"El numero \" +str(numeros) + \" és troba entre el 60 i 80\")\n",
+        "  elif numeros <=100:\n",
+        "     print(\"El numero \" +str(numeros) + \" és troba entre el 80 i 100\")\n",
+        "  elif numeros <=120:\n",
+        "     print(\"El numero \" +str(numeros) + \" és troba entre el 100 i 120\")\n",
+        "  else:\n",
+        "    print(\"El numero \"+str(numeros) + \" és superior a 120\")\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "E36T32vlObZe",
+        "outputId": "16b62966-e05a-4aa5-9a8e-0a3c7a1598db"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "el numero 13 es troba entre el 0 i 20\n",
+            "el numero 27 es troba entre el 20 i 40\n",
+            "el numero 34 es troba entre el 20 i 40\n",
+            "el numero 87 es troba entre el 80 i 100\n",
+            "el numero 123 es superior a 120\n",
+            "el numero 46 es troba entre el 40 i 60\n",
+            "el numero 61 es troba entre el 60 i 80\n",
+            "el numero 88 es troba entre el 80 i 100\n",
+            "el numero 32 es troba entre el 20 i 40\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Fer una variable que sigui phyton, fer un buclee for en el que es cridi la paraula phyton"
+      ],
+      "metadata": {
+        "id": "8ReCoN_8u9R4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = \"python\"\n",
+        "for paraula in x:\n",
+        "  print(paraula)\n",
+        "  if paraula == \"h\":\n",
+        "        break\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0J9T15dnUMWp",
+        "outputId": "008d81ca-4cbc-4451-f68b-5bb5b264e312"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "p\n",
+            "y\n",
+            "t\n",
+            "h\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "que printi tot menys la h"
+      ],
+      "metadata": {
+        "id": "aWfsclUlviuB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = \"python\"\n",
+        "for paraula in x:\n",
+        "  if paraula==\"h\":\n",
+        "    continue\n",
+        "  print(paraula)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CA0XvDjivgya",
+        "outputId": "26065cab-4c35-484b-fff3-1038d61b94aa"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "p\n",
+            "y\n",
+            "t\n",
+            "o\n",
+            "n\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "inprimir les lletres de l paraula de supercalifragilisticoespilidoso sense les A"
+      ],
+      "metadata": {
+        "id": "CYSBTZNhv0Ex"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x= \"supercalifragilisticoespilidoso\"\n",
+        "for lletra in x:\n",
+        "  if lletra == \"a\":\n",
+        "    continue\n",
+        "  print(lletra)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FWCN4P4Z0Xf3",
+        "outputId": "7006ad1b-b095-4a16-ea89-f35428c95c64"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "s\n",
+            "u\n",
+            "p\n",
+            "e\n",
+            "r\n",
+            "c\n",
+            "l\n",
+            "i\n",
+            "f\n",
+            "r\n",
+            "g\n",
+            "i\n",
+            "l\n",
+            "i\n",
+            "s\n",
+            "t\n",
+            "i\n",
+            "c\n",
+            "o\n",
+            "e\n",
+            "s\n",
+            "p\n",
+            "i\n",
+            "l\n",
+            "i\n",
+            "d\n",
+            "o\n",
+            "s\n",
+            "o\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Inprimir mitjanánt un bucle la llista de les següesnts citats: barelona, murcia, valencia, toledo, bilboa, salamanca, teruel, burgos, tarragona, sevilla i vallalodi. Hem de printar aqueste ciutatss sempre i quan la llarga de les araules sigui 6"
+      ],
+      "metadata": {
+        "id": "FYVrL65jwDAZ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ciutats= [\"barcelona\", \"murcia\", \"valencia\", \"toledo\", \"bilboa\", \"salamanca\", \"teruel\", \"burgos\", \"tarragona\", \"sevilla\", \"vallalodid\"]\n",
+        "for noms in ciutats:\n",
+        "  if len(noms) !=6:\n",
+        "    print(noms)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jpqwk2cv2P2B",
+        "outputId": "7885597b-c5b0-464b-fb7f-20eb1771a253"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "barcelona\n",
+            "valencia\n",
+            "salamanca\n",
+            "tarragona\n",
+            "sevilla\n",
+            "vallalodid\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
